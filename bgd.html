@@ -179,6 +179,13 @@
 <script src="/assets/js/d3.v3.min.js"></script>
   <script src="/assets/js/d3-scale-chromatic.v1.min.js"></script>
     <script>
+
+
+    import * as d3 from 'd3';
+import * as d3Chromatic from 'd3-scale-chromatic';
+var color = d3.scaleSequential(d3Chromatic.interpolatePiYG);
+
+
             $("#includenavbar").load("navbar.html");
             document.addEventListener('DOMContentLoaded', function () {
                 const titleElement = document.getElementById('maintitle');
