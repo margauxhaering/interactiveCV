@@ -1,1 +1,86 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Margaux Haering</title>
+
+    <!-- CSS -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/index.css" rel="stylesheet">
+    <!-- javascript -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="page-top" class="index">
+<div id="includenavbar"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading col-md-12">
+                  <h1 class="main"> Margaux Haering </h1> </div>
+                <div class="intro-lead-in col-md-12">PhD student in Bioinformatics and more! </div>
+                </div>
+                <div class="col-md-7" style="padding-top: 30px; padding-bottom: 20px">
+                    <div class="col-md-12"><p class="large">
+                      I am a computer scientist, I've worked in Genomics, Transcriptomics and Proteomics performing data analysis and web-tool development towards visual data mining <br>(<a href="http://mitoxplorer2.ibdm.univ-mrs.fr/about.html" target="_blank">mitoXplorer 2.0</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/35186266/" target="_blank">RNfuzzyApp</a>).<br>
+                      I am mainly intrested in analysing data in new domains and creating interactive interfaces.<br>
+                      I am also a musician, photogrpaher and adventurer....
+                      <br><br>
+                      Don’t hesitate to contact me for questions/collaborations or new ideas!
+                      <br><br><br> Get to know me started with one of the followings:</p></div>
+                    <div class="col-md-12 selection">
+                        <a href="bgd.html" class="icons"><i class="fa fa-database"></i></a>
+                        <p class="large2" style="display: inline-block;">&emsp;<a href="bgd.html">Get to know my background...</a></p>
+                    </div>
+                    <div class="col-md-12 selection">
+                        <a href="whoami.html" class="icons"><i class="fa fa-question-circle-o"></i></a>
+                        <p class="large2" style="display: inline-block;">&emsp;<a href="whoami.html">Get to know my non-scientist self!</a></p>
+                    </div>
+                    <div class="col-md-12 selection">
+                        <a href="pub.html" class="icons"><i class="fa fa-laptop"></i></a>
+                        <p class="large2" style="display: inline-block;">&emsp;<a href="pub.html">Read my papers...</a></p>
+                    </div>
+                    <div class="col-md-12 selection">
+                        <a href="contact.html" class="icons"><i class="fa fa-upload"></i></a>
+                        <p class="large2" style="display: inline-block;">&emsp;<a href="contact.html">Stay in touch!</a></p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="assets/img/me.jpg">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+<script>
+$("#includenavbar").load("navbar.html");
+document.addEventListener('DOMContentLoaded', function () {
+    const titleElement = document.getElementById('maintitle');
+    console.log(titleElement);
+    function showTitle() {
+        for (let i = 0; i < titleElement.length; i++) {
+            setTimeout(titleElement, i * 100, i);
+        }
+    }
+
+    // Call the function to start the animation
+    showTitle();
+});
+
+</script>
+</html>

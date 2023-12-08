@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Margaux Haering - CV</title>
+
+    <!-- CSS -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/cv.css" rel="stylesheet">
+
+    <!-- javascript -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/d3.v3.min.js"></script>
+
+</head>
+
+<body id="page-top" class="index">
+<div id="includenavbar"></div>
+
+<div id="content" class="container">
+
+<div class="row row-offcanvas row-offcanvas-left">
+
+    <div class="col-xs-3 col-sm-3 col-md-3 sidebar-offcanvas">
+        <div id="sidebar">
+        <ul class="list-unstyled components">
+            <li>
+                <a href="#" class="page-scroll">My Curriculum Vitae</a>
+            </li>
+            <li>
+                <a href="#exp" class="page-scroll">Experience</a>
+            </li>
+            <li>
+                <a href="#edu" class="page-scroll">Education</a>
+            </li>
+            <li >
+                <a href="#skills" class="page-scroll">Skills</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="main" class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+        <div class="col-md-12">
+      <div id ="intro" class="intro-heading col-md-12">
+      <br><br><br>  <h1 class="main">My Curriculum Vitae</h1>
+            <div class="col-md-12" style="padding:10px 0px; text-align:center">
+              <h5>  Below is a summary of my scientist self.<br>Explore in details by clicking on the side menu.
+                <br> <a href="/assets/pdf/HEARING_cv.pdf" download> my CV</a> as pdf here.
+              </h5>
+            </div>
+        </div></div>
+        <div class="col-md-12" id="pies" style="padding-top: 20px;">
+            <div class="col-md-4">
+                <h3>Experience</h3>
+                <div class="col-md-12" id="pie1" style="padding-left: 55px; padding-right: 0px; padding-top:20px"></div>
+            </div>
+            <div class="col-md-4">
+                <h3>Education</h3>
+                <div class="col-md-12" id="pie2" style="padding-left: 70px; padding-right: 0px; padding-top:20px"></div>
+            </div>
+            <div class="col-md-4">
+                <h3>Skills</h3>
+                <div class="col-md-12" id="pie3" style="padding-left: 110px; padding-right: 0px; padding-top:20px"></div>
+            </div>
+        </div>
+          <div id="timeline" class="col-md-12" style="margin-top:80px; margin-left:60px"></div>
+        <div id="exp" class="col-md-12" style="margin-top:80px" >
+            <h2>Experience</h2>
+            <div class="col-md-12" style="padding:10px 0px">
+              <h4> Teaching - 2020-2024
+              </h4>
+                <h5> I have been teaching R and mySQL in <b>Master 1, Licence 2 & 3 </b> <br>
+                  writing, doing and correcting courses, trainings and exams
+              </h5>
+            </div>
+            <div class="col-md-12" style="padding:10px 0px">
+              <h4> Data analysis Engineer - Aug 2020 - Aug 2021
+              </h4>
+                <h5> IBDM gave me the opportunity to poursue my master 2 internship leading to the publication <br>
+                  of my RNA-seq analysis R-shiny App <b> RNfuzzyApp</b>.
+                <br>I analyzed ATAC-seq, CUT&RUN data and worked on <a href="https://mitoxplorer2.ibdm.univ-amu.fr"> mitoXplorer 2.0 </a> and <a href="https://kailash.ibdm.univ-amu.fr/AnnoMiner/">Annominer </a>
+                <br> in terms of data selection and analysis.
+              </h5>
+            </div>
+            <div class="col-md-12" style="padding:10px 0px">
+              <h4> Master 2 internship - Jan-Jul 2020
+              </h4>
+                <h5> The goal was to analyze bulk RNA-seq data in <i>D.melanogaster</i>.
+                  <br>I ended up developping a R-shiny app to allow biologists to be independant in their analysis. <br>
+                  This is when I realized how important it is to develop user-friendly interface.
+                  <br> <b>Bianca Habermann Computational Biology team at the <a href="https://www.ibdm.univ-amu.fr">IBDM</a>.</b>
+                  <br> <a href="/assets/pdf/M2_report.pdf" download> Report (in english)</a>
+              </h5>
+            </div>
+
+            <div class="col-md-12" style="padding:10px 0px">
+              <h4> Master 1 internship - Apr-Jun 2019
+              </h4>
+                <h5> The challenge was to characterize trajectories of adhesion molecules involved in cancer interactions. <br>
+                  Single-molecule video-nanoscopy measurements at the level of contact between stromal and leukemic cells <br>
+                  allow us to study the establishment and evolution of cell junctions.<br>
+                  Videos are recorded and analyzed by dedicated software, Multiple Target Tracing (MTT). <br>
+                   My aim is to characterize these trajectories in order to clarify the mechanisms of tumor cell interaction under different conditions.
+                   <br> To do this, I performed a Mean Squared Displacement (MSD) adjustment. <br>
+                   Supervised by <b> Arnaud Sergé, "Leuko/Stromal Interactions in Normal and Pathological Hematopoiesis" team at the <a href="https://www.crcm-marseille.fr"> CRCM</a>.</b>
+                     <br> <a href="/assets/pdf/M1_report.pdf" download> Report (in french)</a>
+              </h5>
+            </div>
+          </div>
+
+          <div id="edu" class="col-md-12" style="margin-top:80px" >
+              <h2>Education</h2>
+              <div class="col-md-12" style="padding:10px 0px">
+                <h4> Bioinformatics PhD - 2021-2024
+                </h4>
+                  <h5>
+                    My PhD consists of providing a single-cell analysis section to the <a href="https://mitoxplorer2.ibdm.univ-amu.fr"> mitoXplorer 2.0 </a> platform to create V 3.0.
+                    <br> And in a second time to develop a sister of mitoXplorer 3.0, ataxiaXplorer.
+                    <br> AtaxiaXplorer will have its own interactome which I build collecting RNA-seq data of several spinocerebellar ataxias
+                    <br> and analyzing them to find common genes.
+                    <br> The goal is to allow the user to explore deeper its data in the context of ataxia or mitochondria.
+                </h5>
+              </div>
+              <div class="col-md-12" style="padding:10px 0px">
+                <h4> Software development and analysis Master - 2018-2020
+                </h4>
+                  <h5>
+                    This master allowed me to learn bioinformatics techniques and methods to analyze data.
+                    <br> Biological applications including  analysis of genomic, epigenomic, transcriptomic, proteomic, evolutionary and polymorphic variation data.
+                    <br> Computer science training included courses in programming, systems administration, software engineering,
+                    <br> the development of bioinformatics resources (databases, analysis tools).
+                    <br> Biostatistics covered statistical inference, multidimensional data analysis, and machine learning.
+                </h5>
+              </div>
+              <div class="col-md-12" style="padding:10px 0px">
+                <h4> Biochemistry and pharmaceutical chemistry licence - 2015-2018
+                </h4>
+                  <h5>
+                      I discovered a large panel of the biochemistry and its applications.
+                      <br> I took all programming options as I knew I didn't want to do wet lab experiments
+                      <br> and was sure about my will to be part of new computer technologies in biology.
+                </h5>
+              </div>
+            </div>
+
+
+            <div id="skills" class="col-md-12" style="margin-top:80px" >
+                <h2>Skills</h2>
+                <div class="col-md-12" style="padding:40px 0px; margin-left:60px;">
+                  <div class="col-md-1" style="text-align:center"><img src="/assets/img/R.png"></div>
+                  <div class="col-md-1" style="text-align:center"><img src="/assets/img/python.png"></div>
+                  <div class="col-md-1" style="text-align:center"><img src="/assets/img/html.png"></div>
+                  <div class="col-md-1" style="text-align:center"><img src="/assets/img/css.png"></div>
+                  <div class="col-md-1" style="text-align:center"><img src="/assets/img/js.png"></div>
+                  <div class="col-md-1" style="text-align:center"><img src="/assets/img/mysql.png"></div>
+                  <div class="col-md-1" style="text-align:center"><img src="/assets/img/php.png"></div>
+                  <div class="col-md-1" style="text-align:center"><img src="/assets/img/ps.png"></div>
+                </div>
+              </div>
+
+
+
+
+
+    </div>
+
+</div>
+</div>
+
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/bootstrap-table.min.js"></script>
+<script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script>
+            $("#includenavbar").load("navbar.html");
+            document.addEventListener('DOMContentLoaded', function () {
+                const titleElement = document.getElementById('maintitle');
+                function showTitle() {
+                    for (let i = 0; i < titleElement.length; i++) {
+                        setTimeout(titleElement, i * 100, i);
+                    }
+                }
+
+                // Call the function to start the animation
+                showTitle();
+            });
+
+
+        // Function to create a pie chart
+        function createPieChart(data, containerId) {
+            const width = 200;
+            const height = 200;
+            const radius = Math.min(width, height) / 2;
+
+            var color = d3.scale.ordinal()
+          	    .range([ "#bc80bd", "#ccebc5", "#f781bf", "#fbb4ae", "#b3cde3", "#ffed6f", "#decbe4", "#fed9a6"]);
+
+
+            const svg = d3.select(`#${containerId}`)
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height)
+                .append('g')
+                .attr('transform', `translate(${width / 2},${height / 2})`);
+
+                var pie = d3.layout.pie()
+              	    .sort(null)
+              	   .startAngle(1.1*Math.PI)
+              	    .endAngle(3.1*Math.PI)
+              	    .value(function(d) { return d.value; });
+
+
+            const arc = d3.arc()
+                .outerRadius(radius)
+                .innerRadius(0);
+
+                const arcs = svg.selectAll('arc')
+                    .data(pie(data))
+                    .enter()
+                    .append('g')
+                    .attr('class', 'arc');
+
+                    arcs.append('path')
+                 .attr('d', arc)
+                 .attr('fill', (d, i) => color(i))
+                 .style("fill", function(d) { return d.data.color; })
+                 .style('opacity', 1)
+                 .on('mouseover', function(d) {
+                     d3.select(this).attr('stroke', 'black').attr('stroke-width', 2)
+                     .transition()
+                     .duration(200)
+                     .style('opacity', 0.5);
+                     svg.append('text')
+                                .attr('id', 'tooltip')
+                                .html(function() {
+                                      return `${d.data.label}<tspan x="0" dy="1.2em">${d.data.time}</tspan>`;
+                                  })
+                                .attr('text-anchor', 'middle')
+                                .attr('dy', -10)
+                                .style('font-size', '15px')
+                                .style('fill', 'white')
+
+                        })
+                        .on('mouseout', function() {
+                            d3.select(this).attr('stroke', '').attr('stroke-width', 0)
+                            .transition()
+                            .duration(200)
+                            .style('opacity', 1);;
+                            d3.select('#tooltip').remove();
+
+                        })
+                        .transition().duration(1500)
+                        .attrTween('d', function(d) {
+                            var i = d3.interpolate(d.startAngle + 0.1, d.endAngle);
+                            return function(t) {
+                                d.endAngle = i(t);
+                                return arc(d);
+                            }
+                 });
+
+
+        }
+
+        const exp = [
+            { label: 'Master 1 Internship', value: 3.1, time:'2019 - 2 months', color:1 },
+            { label: 'Master 2 Internship', value: 8.8, time:'2020 - 6 months', color: 2 },
+            { label: 'Data analysis Engineer', value: 17.6, time:'2020-2021 - 1 year', color: 3 },
+            { label: 'Teaching', value: 70.5, time:'2020-2024', color:4 },
+
+
+        ];
+
+        const edu = [
+            { label: 'Biochesmistry Licence', value: 37.5, time:'2015 - 2018', color:4 },
+            { label: 'Bioinformatics Master', value: 25, time:'2018 - 2020', color:5 },
+            { label: 'Bioinformatics PhD', value: 37.5, time: '2021 - 2024', color:6 },
+        ];
+
+        const skills = [
+            { label: 'R', value: 30, time:'', color:7 },
+            { label: 'Python', value: 10, time:'', color:8 },
+            { label: 'Web', value: 30, time: 'HTML, CSS, JS, PHP, mySQL', color:9 },
+            { label: 'Bash', value: 30, time: '', color:10 },
+        ];
+
+        // Call the function to create pie charts
+        createPieChart(exp, 'pie1');
+        createPieChart(edu, 'pie2');
+        createPieChart(skills, 'pie3');
+
+
+
+        // Data for the timeline
+        const events = [
+          { ev: 'Licence', start: '09/2015', end: '06/2018' },
+          { ev: 'Master', start: '09/2018', end: '06/2020' },
+          { ev: 'Engineer', start: '08/2020', end: '09/2021' },
+          { ev: 'PhD', start: '09/2021', end: '10/2024' }
+        ];
+
+        const width = 800;
+        const height = 100;
+        const svg = d3.select('#timeline')
+          .append('svg')
+          .attr('width', width)
+          .attr('height', height);
+
+        const parseDate = d3.timeParse('%m/%Y');
+        events.forEach(event => {
+          event.start = parseDate(event.start);
+          event.end = parseDate(event.end);
+        });
+
+
+        const xScale = d3.scaleTime()
+          .domain([d3.min(events, d => d.start), d3.max(events, d => d.end)])
+          .range([20, width - 20]);
+
+          svg.selectAll('.event')
+            .data(events)
+            .enter()
+            .append('g')
+            .attr('class', 'event-group')
+            .attr('transform', d => 'translate(' + xScale(d.start) + ',' + (height / 2 - 20) + ')')
+            .each(function (d) {
+              d3.select(this)
+                .append('rect')
+                .attr('class', 'event')
+                .attr('width', xScale(d.end) - xScale(d.start))
+                .attr('height', 20);
+
+              d3.select(this)
+                .append('text')
+                .attr('class', 'event-label')
+                .attr('x',10)
+                .attr('y', -10)
+                .style('font-size', '15px')
+                .style('fill', 'white')
+                .text(d => d.ev);
+
+            });
+
+        const xAxis = d3.axisBottom(xScale);
+        svg.append('g')
+          .attr('class', 'axis')
+          .attr('transform', 'translate(0,' + (height / 2) + ')')
+          .call(xAxis);
+
+        d3.select('#timeline')
+          .append('div')
+          .attr('id', 'tooltip')
+          .style('position', 'absolute')
+          .style('z-index', '10')
+          .style('opacity', 0);
+
+    </script>
+
+</body>
+
+</html>

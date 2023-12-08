@@ -1,0 +1,53 @@
+<script>
+    $(".nav li").removeClass("active");
+    let page = location.href.split('/')[3];
+    page = page.split('.')[0];
+    switch(page) {
+    case 'index':
+        break;
+    case 'about':
+        $(".nav li:nth-child(2)").addClass("active")
+        break;
+    case 'background':
+        $(".nav li:nth-child(3)").addClass("active")
+        break;
+    case 'publications':
+        $(".nav li:nth-child(4)").addClass("active")
+        break;
+    case 'contact':
+        $(".nav li:nth-child(5)").addClass("active")
+        break;
+    }
+</script>
+
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Margaux Haering</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="index.html"></a>
+                    </li>
+                    <li>
+                        <a href="whoami.html">Who am I </a>
+                    </li>
+                    <li>
+                        <a href="bgd.html">Background</a>
+                    </li>
+                    <li>
+                        <a href="pub.html">Publications</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</nav>

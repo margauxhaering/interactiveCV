@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Margaux Haering - CV</title>
+
+    <!-- CSS -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/cv.css" rel="stylesheet">
+
+    <!-- javascript -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+
+</head>
+
+<body id="page-top" class="index">
+<div id="includenavbar"></div>
+
+<div id="content" class="container">
+
+<div class="row row-offcanvas row-offcanvas-left">
+
+
+    <div id="main" class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+        <div class="col-md-12">
+      <div id ="intro" class="intro-heading col-md-12">
+      <br><br><br>  <h1 class="main">Keep in touch !</h1>
+      <div class="col-lg-6 sidebar-offcanvas" style="padding-top: 30px; padding-bottom: 20px;color:white;">
+        <span class="glyphicon glyphicon-envelope" aria-hidden="true" style="font-size: 1em;width: 25px;color:white; line-height: 25px;"></span><a href="mailto:margaux.haering@univ-amu.fr">margaux.haering@univ-amu.fr</a><br>
+        <span class="glyphicon glyphicon-earphone" aria-hidden="true" style="font-size: 1em;width: 25px; color:white; line-height: 25px;"></span>0033 (0)7 88 22 77 48<br>
+      </div>
+
+          </div>
+    </div>
+
+</div>
+</div>
+
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/bootstrap-table.min.js"></script>
+    <script>
+            $("#includenavbar").load("navbar.html");
+            document.addEventListener('DOMContentLoaded', function () {
+                const titleElement = document.getElementById('maintitle');
+                function showTitle() {
+                    for (let i = 0; i < titleElement.length; i++) {
+                        setTimeout(titleElement, i * 100, i);
+                    }
+                }
+
+                // Call the function to start the animation
+                showTitle();
+            });
+
+
+    </script>
+
+</body>
+
+</html>
