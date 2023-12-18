@@ -202,9 +202,12 @@
             const height = 200;
             const radius = Math.min(width, height) / 2;
 
-            var color = d3.color()
-          	    .range([ "#bc80bd", "#ccebc5", "#f781bf", "#fbb4ae", "#b3cde3", "#ffed6f", "#decbe4", "#fed9a6"]);
 
+            var color = function(d) {
+                // Assuming d is an index or a categorical value
+                var colors = ["#bc80bd", "#ccebc5", "#f781bf", "#fbb4ae", "#b3cde3", "#ffed6f", "#decbe4", "#fed9a6"];
+                return colors[d];
+            };
 
             const svg = d3.select(`#${containerId}`)
                 .append('svg')
