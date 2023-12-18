@@ -180,6 +180,8 @@
 <script src="/assets/js/d3.v4.min.js"></script>
     <script>
 
+
+
             $("#includenavbar").load("navbar.html");
             document.addEventListener('DOMContentLoaded', function () {
                 const titleElement = document.getElementById('maintitle');
@@ -200,15 +202,8 @@
             const height = 200;
             const radius = Math.min(width, height) / 2;
 
-            var color = [
-  "#FFD1DC", // Pastel Pink
-  "#FFECB3", // Pastel Yellow
-  "#C9E4E7", // Pastel Blue
-  "#FFD700", // Pastel Gold
-  "#98FB98", // Pastel Green
-  "#FFB6C1", // Pastel Rose
-  "#D8BFD8"  // Pastel Lavender
-];
+            var color = d3.color()
+          	    .range([ "#bc80bd", "#ccebc5", "#f781bf", "#fbb4ae", "#b3cde3", "#ffed6f", "#decbe4", "#fed9a6"]);
 
 
             const svg = d3.select(`#${containerId}`)
