@@ -1,5 +1,8 @@
 body{
-  background-color: #222222;
+  background-image: url('../img/bgd.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 h1.main {
     color:#12e2c0;
@@ -106,7 +109,11 @@ h6 {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #999999;
+    background-image: url('../img/contact.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+
     color: #fff !important;
     transition: all 0.3s;
     font-size: 16px
