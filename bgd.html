@@ -16,7 +16,6 @@
     <!-- javascript -->
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/jquery.min.js"></script>
 
 </head>
 
@@ -28,7 +27,7 @@
 <div class="row row-offcanvas row-offcanvas-left">
 
     <div class="col-xs-3 col-sm-3 col-md-3 sidebar-offcanvas">
-        <div class="left" id="sidebar">
+        <div id="sidebar">
         <ul class="list-unstyled components">
             <li>
                 <a href="#">My Curriculum Vitae</a>
@@ -52,7 +51,7 @@
       <br><br><br>  <h1 class="main">My Curriculum Vitae</h1>
             <div class="col-md-12" style="padding:10px 0px; text-align:center">
               <h5>  Below is a summary of my scientist self.<br>Explore in details by clicking on the side menu.
-                <br> <a href="/assets/pdf/HAERING_cv.pdf" download> my CV</a> as pdf here.
+                <br> my CV in <a href="/assets/pdf/HAERING_EN_CV.pdf" download> English</a> or  <a href="/assets/pdf/HAERING_FR_CV.pdf" download> French</a> here.
               </h5>
             </div>
         </div></div>
@@ -197,13 +196,9 @@
                         setTimeout(titleElement, i * 100, i);
                     }
                 }
-
-                // Call the function to start the animation
                 showTitle();
             });
 
-
-        // Function to create a pie chart
         function createPieChart(data, containerId) {
             const width = 200;
             const height = 200;
@@ -211,7 +206,6 @@
 
 
             var color = function(d) {
-                // Assuming d is an index or a categorical value
                 var colors = ["#bc80bd", "#ccebc5", "#f781bf", "#fbb4ae", "#b3cde3", "#ffed6f", "#decbe4", "#fed9a6"];
                 return colors[d];
             };
@@ -303,14 +297,10 @@
             { label: 'Bash', value: 30, time: '', color:10 },
         ];
 
-        // Call the function to create pie charts
         createPieChart(exp, 'pie1');
         createPieChart(edu, 'pie2');
         createPieChart(skills, 'pie3');
 
-
-
-        // Data for the timeline
         const events = [
           { ev: 'Licence', start: '09/2015', end: '06/2018' },
           { ev: 'Master', start: '09/2018', end: '06/2020' },

@@ -175,60 +175,6 @@ a:visited {
     align-items: stretch;
 }
 
-.left {
-  min-width: 250px;
-  max-width: 250px;
-  display: inline-block;
-  float: left;
-  position: sticky;
-  top: 50px;
-  background-image: url('../img/contact.jpg');
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-
-}
-
-#sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background-image: url('../img/contact.jpg');
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-    color: #fff !important;
-    transition: all 0.3s;
-    font-size: 16px;
-}
-
-#sidebar a{
-    color: black;
-}
-
-#sidebar a:hover, a:focus{
-    text-decoration: none;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-}
-
-
-#sidebar ul li a {
-    padding: 10px 20px;
-    font-size: 1.1em;
-    display: block;
-}
-
-#sidebar ul li a:hover {
-    color: #24d8ba;
-}
-
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #1fc4a8;
-}
-
 .sidenav a {
     padding: 5px 0px 0px 0px;
     text-decoration: none;
