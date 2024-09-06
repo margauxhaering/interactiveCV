@@ -347,7 +347,7 @@ strong {
 Home
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../img/bgd.jpg');
+  background-image: url('../images/bgd.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -445,7 +445,7 @@ Home
   FEATURED
 -----------------------------------------*/
 .featured-section {
-  background-image: url('../img/activities/drums.jpg');
+  background-image: url('../images/activities/drums.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
