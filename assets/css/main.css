@@ -122,7 +122,11 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
-
+#piessss, #timeline {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 /*---------------------------------------
   SECTION
@@ -680,7 +684,11 @@ Home
   display: block;
 }
 
-
+#timeline {
+  width:calc(100vw - 100vw/2);
+  margin-top: 80px;
+  margin-left: 150px;
+}
 /*---------------------------------------
   RESPONSIVE STYLES
 -----------------------------------------*/
@@ -739,12 +747,24 @@ Home
   .booking-form {
     padding: 45px;
   }
+
+  #timeline {
+    margin-top: 50px;
+    margin-left: 50px;
+
+  }
+
+  
 }
 
 @media screen and (max-width: 767px) {
   .custom-btn {
     font-size: 14px;
     padding: 10px 20px;
+  }
+  #timeline {
+    margin-top: 50px;
+    margin-left: 20px;
   }
 }
 
@@ -776,4 +796,10 @@ Home
   .booking-form {
     padding: 35px;
   }
+
+  #timeline {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
 }

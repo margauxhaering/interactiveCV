@@ -77,8 +77,9 @@
                                     </div>
                                 </div>
                                 <div style="padding-top:20px;">
-                                  Hi, I'm Margaux, a computer scientist, I've worked in Genomics, Transcriptomics and Proteomics <br>performing data analysis and web-tool development towards visual data mining <br>(<a class="iconLinks" href="http://mitoxplorer2.ibdm.univ-mrs.fr/about.html" target="_blank">mitoXplorer 2.0</a>,  <a class="iconLinks" href="http://mitoxplorer3.ibdm.univ-mrs.fr/about.html" target="_blank">mitoXplorer 3.0</a> and <a class="iconLinks" href="https://pubmed.ncbi.nlm.nih.gov/35186266/" target="_blank">RNfuzzyApp</a>).<br>
-                                  Mainly intrested in data analysis and creating interactive interfaces.<br>
+                                  Hi, I'm Margaux, a computer scientist ! <br><br>
+                                  Working in data analysis and web development including database management. <br>
+                                  Mainly interested in data manipulation and creating interactive interfaces.<br>
                                   I am also a musician, photographer and adventurer....</div>
                             </div>
 
@@ -115,12 +116,12 @@
                                       Let's not forget that I also dive underwater around the globe...</p>
                                     </div>
 
-                                        <div class="col-lg-5 col-12 custom-block-bg-overlay-wrap me-lg-5 mb-5 mb-lg-0">
+                                        <div class="col-lg-5 col-6 custom-block-bg-overlay-wrap me-lg-5 mb-5 mb-lg-0">
                                             <img src="/assets/images/activities/skydiving.png" class="custom-block-bg-overlay-image img-fluid" alt="">
 
                                         </div>
 
-                                        <div class="col-lg-5 col-12 custom-block-bg-overlay-wrap mt-4 mt-lg-0 mb-5 mb-lg-0">
+                                        <div class="col-lg-5 col-6 custom-block-bg-overlay-wrap mt-4 mt-lg-0 mb-5 mb-lg-0">
                                             <img src="/assets/images/activities/horse.jpg" class="custom-block-bg-overlay-image img-fluid" alt="">
                                 </div>
                                 <div class="pb-3 mb-5"style="padding-top:40px;">
@@ -157,19 +158,34 @@
                         <div class="container">
                             <div class="row border-bottom">
 
-                                <div class="col-lg-12 col-12">
+                                <div class="col-12">
                                     <h2 class="mb-5"style="text-transform: uppercase;font-weight: 500;letter-spacing: .15em;">My background</h2>
                                 </div>
                                 <div class="border-bottom pb-3 mb-5">
                                     <p>Below is a summary of my scientist self.
                                       <br> my CV in <a href="/assets/pdf/HAERING_EN.pdf" download> English</a> or  <a href="/assets/pdf/HAERING_FR.pdf" download> French</a> here.</p>
                                 </div>
-                                  <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experience &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Education &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Skills</h3>
-                                  <div class="col-md-4" id="pie1" style="padding-left: 55px; padding-right: 0px; padding-top:40px"></div>
-                                  <div class="col-md-4" id="pie2" style="padding-left: 70px; padding-right: 0px; padding-top:40px"></div>
-                                  <div class="col-md-4" id="pie3" style="padding-left: 110px; padding-right: 0px; padding-top:40px"></div>
+                                <div id="piessss" class="row col-12">
+                                <div class="col-lg-5 col-12">
+                                    <h4>Experience</h4>
+                                    <br><div id="pie1"></div>
+                                    <br><div id="desc"></div>
+                                </div>
 
-                                  <div id="timeline" class=" col-md-12" style="margin-top:80px; margin-left:200px"></div>
+                                <div class="col-lg-5 col-12">
+                                    <h4>Education</h4>
+                                    <br><div id="pie2"></div>
+                                    <br><div id="desc2"></div>
+                                </div>
+
+                                <div class="col-lg-5 col-12">
+                                    <h4>Skills</h4>
+                                    <br><div id="pie3"></div>
+                                    <br><div id="desc3"></div>
+                                </div>
+                                </div>
+
+                                  <div id="timeline" class="col-12"></div>
                             </div>
                         </div>
 
@@ -418,10 +434,10 @@
         });
 
 
-        function createPieChart(data, containerId) {
+        function createPieChart(data, containerId, descId) {
             const width = 200;
             const height = 200;
-            const radius = Math.min(width, height) / 2;
+            const radius = 100;
 
 
             var color = function(d) {
@@ -431,10 +447,10 @@
 
             const svg = d3.select(`#${containerId}`)
                 .append('svg')
-                .attr('width', width)
-                .attr('height', height)
+                .attr('width', width+3)
+                .attr('height', height+3)
                 .append('g')
-                .attr('transform', `translate(${width / 2},${height / 2})`);
+                .attr('transform', `translate(102,102)`);
 
                 var pie = d3.layout.pie()
                     .sort(null)
@@ -445,13 +461,16 @@
 
             const arc = d3.arc()
                 .outerRadius(radius)
-                .innerRadius(0);
+                .innerRadius(1);
 
                 const arcs = svg.selectAll('arc')
                     .data(pie(data))
                     .enter()
                     .append('g')
                     .attr('class', 'arc');
+
+var infoDiv = d3.select(`#${descId}`);
+
 
                     arcs.append('path')
                  .attr('d', arc)
@@ -465,21 +484,27 @@
                      .style('opacity', 0.5);
                      svg.append('text')
                                 .attr('id', 'tooltip')
-                                .html(function() {
-                                      return `${d.data.label}<tspan x="0" dy="1.2em">${d.data.time}</tspan>`;
-                                  })
                                 .attr('text-anchor', 'middle')
                                 .attr('dy', -10)
                                 .style('font-size', '15px')
-                                .style('fill', 'white')
+                                .style('fill', 'black')
+                                infoDiv
+                                .html(function() {
+                                      return `${d.data.label}<tspan x="0" dy="1.2em"> <br> ${d.data.time}</tspan>`;
+                                  });
+
+
 
                         })
                         .on('mouseout', function() {
                             d3.select(this).attr('stroke', '').attr('stroke-width', 0)
                             .transition()
                             .duration(200)
-                            .style('opacity', 1);;
-                            d3.select('#tooltip').remove();
+                            .style('opacity', 1)
+                            d3.select('#tooltip').remove()
+                            infoDiv
+                                .html("");
+
 
                         })
                         .transition().duration(1500)
@@ -516,18 +541,28 @@
             { label: 'Bash', value: 25, time: '', color:10 },
         ];
 
-        createPieChart(exp, 'pie1');
-        createPieChart(edu, 'pie2');
-        createPieChart(skills, 'pie3');
+        createPieChart(exp, 'pie1', 'desc');
+        createPieChart(edu, 'pie2','desc2');
+        createPieChart(skills, 'pie3','desc3');
 
         const events = [
           { ev: 'Licence', start: '09/2015', end: '06/2018' },
           { ev: 'Master', start: '09/2018', end: '06/2020' },
           { ev: 'Engineer', start: '08/2020', end: '09/2021' },
-          { ev: 'PhD', start: '09/2021', end: '10/2024' }
+          { ev: 'PhD', start: '09/2021', end: '09/2024' }
         ];
 
-        const width = 800;
+let width;
+        if (window.innerWidth >= 900) {
+            width = 800;
+        } else if (window.innerWidth < 900 && window.innerWidth >= 700) {
+            width = 600;
+        } else if (window.innerWidth < 700) {
+            width = 500;
+        } else {
+             width = 400;
+        }
+
         const height = 100;
         const svg = d3.select('#timeline')
           .append('svg')
@@ -543,7 +578,7 @@
 
         const xScale = d3.scaleTime()
           .domain([d3.min(events, d => d.start), d3.max(events, d => d.end)])
-          .range([20, width - 20]);
+          .range([2, width - 20]);
 
           svg.selectAll('.event')
             .data(events)
@@ -555,16 +590,16 @@
               d3.select(this)
                 .append('rect')
                 .attr('class', 'event')
-                .attr('width', xScale(d.end) - xScale(d.start))
+                .attr('width', xScale(d.end) - xScale(d.start)-1)
                 .attr('height', 20)
                 .attr('fill', '#12e2c0');
 
               d3.select(this)
                 .append('text')
                 .attr('class', 'event-label')
-                .attr('x',10)
+                .attr('x',2)
                 .attr('y', -10)
-                .style('font-size', '15px')
+                .style('font-size', '12px')
                 .style('fill', 'black')
                 .text(d => d.ev);
 
@@ -582,6 +617,8 @@
           .style('position', 'absolute')
           .style('z-index', '10')
           .style('opacity', 0);
+
+
 </script>
 
     </body>
