@@ -687,7 +687,6 @@ Home
 #timeline {
   width:calc(100vw - 100vw/2);
   margin-top: 80px;
-  margin-left: 150px;
 }
 /*---------------------------------------
   RESPONSIVE STYLES
@@ -750,7 +749,6 @@ Home
 
   #timeline {
     margin-top: 50px;
-    margin-left: 50px;
 
   }
 
@@ -764,7 +762,6 @@ Home
   }
   #timeline {
     margin-top: 50px;
-    margin-left: 0px;
   }
 }
 
@@ -799,7 +796,6 @@ Home
 
   #timeline {
     margin-top: 50px;
-    margin-left: 2px;
   }
 
 }
