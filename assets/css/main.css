@@ -687,11 +687,12 @@ Home
 #timeline {
   width:calc(100vw - 100vw/2);
   margin-top: 80px;
+  margin-left: 150px;
 }
 /*---------------------------------------
   RESPONSIVE STYLES
 -----------------------------------------*/
-@media screen and (min-width: 900px) and (max-width: 1200px) {
+@media screen and (min-width: 900px) {
   h1 {
     font-size: 62px;
   }
@@ -749,6 +750,7 @@ Home
 
   #timeline {
     margin-top: 50px;
+    margin-left: 0px;
 
   }
 
@@ -796,6 +798,7 @@ Home
 
   #timeline {
     margin-top: 50px;
+    margin-left: 0px;
   }
 
 }
