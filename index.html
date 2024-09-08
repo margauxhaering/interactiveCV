@@ -576,7 +576,7 @@ let width;
 
         const xScale = d3.scaleTime()
           .domain([d3.min(events, d => d.start), d3.max(events, d => d.end)])
-          .range([2, width+20]);
+          .range([2, width]);
 
           svg.selectAll('.event')
             .data(events)
