@@ -692,13 +692,13 @@ Home
 /*---------------------------------------
   RESPONSIVE STYLES
 -----------------------------------------*/
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 900px) and (max-width: 1200px) {
   h1 {
     font-size: 62px;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 900px) {
   h1 {
     font-size: 54px;
   }
@@ -754,7 +754,7 @@ Home
 
   }
 
-  
+
 }
 
 @media screen and (max-width: 767px) {
@@ -764,7 +764,7 @@ Home
   }
   #timeline {
     margin-top: 50px;
-    margin-left: 20px;
+    margin-left: 0px;
   }
 }
 
