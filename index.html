@@ -553,12 +553,16 @@ var infoDiv = d3.select(`#${descId}`);
         ];
 
 let width;
+let rectheigth;
         if (window.innerWidth >= 900) {
             width = 800;
+            rectheigth = 12;
         } else if (window.innerWidth < 900 && window.innerWidth >= 700) {
             width = 600;
+            rectheigth = 12;
         } else if (window.innerWidth < 700) {
-            width = 360;
+            width = 330;
+            rectheigth = 9;
         }
 
         const height = 100;
@@ -576,7 +580,7 @@ let width;
 
         const xScale = d3.scaleTime()
           .domain([d3.min(events, d => d.start), d3.max(events, d => d.end)])
-          .range([2, width]);
+          .range([2,width]);
 
           svg.selectAll('.event')
             .data(events)
@@ -597,7 +601,7 @@ let width;
                 .attr('class', 'event-label')
                 .attr('x',2)
                 .attr('y', -10)
-                .style('font-size', '12px')
+                .style('font-size', rectheigth)
                 .style('fill', 'black')
                 .text(d => d.ev);
 
