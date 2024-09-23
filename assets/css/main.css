@@ -128,6 +128,10 @@ strong {
   text-align: center;
 }
 
+#desc, #desc2, #desc3{
+  font-size: 15px;
+}
+
 /*---------------------------------------
   SECTION
 -----------------------------------------*/
@@ -894,6 +898,9 @@ color: var(--secondary-color);
   }
   .space{
     margin-bottom: 10px
+  }
+  #desc, #desc2, #desc3{
+    font-size: 8px;
   }
 
 }
