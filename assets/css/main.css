@@ -841,8 +841,8 @@ Home
 .detailscv, .detailsphoto {
 font-size: 15px;
 column-count: 2;
-column-gap: 20px;
-text-align:left;
+column-gap: 30px;
+text-align:justify;
 }
 .detailscv, .detailsphoto b{
 font-size: 20px;
@@ -870,7 +870,7 @@ color: var(--secondary-color);
   }
 
   h3 {
-    font-size: 26px;
+    font-size: 18px;
   }
 
   h4 {
