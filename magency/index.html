@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>M AGENCY</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
+
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="/assets/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="/assets/css/main.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block sidebar collapse p-0">
+
+                    <div class="position-sticky sidebar-sticky d-flex flex-column justify-content-center align-items-center">
+
+                      <a class="navbar-brand" href="/magency/">
+                          <img src="/assets/images/magency.png" class="logo-image img-fluid" align="">
+                      </a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Conciergerie</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Photographie</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">Web Developpement</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">Soutien Scolaire</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_6">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="col-md-9 ms-sm-auto col-lg-9 p-0">
+                    <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="col-lg-9 col-12">
+                                        <h1 class="text-white" style="text-transform: uppercase;font-weight: 500;letter-spacing: .15em;">M Agency</h1>
+                                        <p class="text-black">Bien plus qu'une simple agence...</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="custom-block d-lg-flex flex-column justify-content-center align-items-center">
+                                <img src="/assets/images/contact.jpg" class="custom-block-image img-fluid" alt="">
+
+                                <h4><strong class="text-white">Contactez moi !</strong></h4>
+
+                                <a href="#section_6" class="smoothscroll btn custom-btn custom-btn-italic mt-3">juste ici</a>
+                            </div>
+                    </section>
+
+
+                    <section class="about-section section-padding" id="section_2">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-12 col-12 mx-auto">
+                                    <h2 class="mb-4"style="text-transform: uppercase;font-weight: 500;letter-spacing: .15em;">Conciergerie</h2>
+
+                                    <div class="border-bottom pb-3 mb-5">
+                                        <p>Vous louez votre bien ? Confiez nous la remise des clés, l'état des lieux et le ménage.</p>
+                                    </div>
+                                </div>
+
+                                    <h6 class="mb-5">Packages</h6>
+                                    <div class="pb-3 mb-5">
+                                        <p>Plusieurs packages sont disponibles afin de satisfaire votre besoin.</p>
+                                    </div>
+
+                                    <div class="col-lg-5 col-6 custom-block-bg-overlay-wrap me-lg-5 mb-5 mb-lg-0 ">
+                                        <img src="/assets/images/magency/cle.jpg" class="custom-block-bg-overlay-image img-fluid" alt="Real Estate" onclick="showArticle('immoArticle')">
+
+                                    </div>
+
+                                    <div class="col-lg-5 col-6 custom-block-bg-overlay-wrap mt-4 mt-lg-0 mb-5 mb-lg-0">
+                                        <img src="/assets/images/magency/menage.jpg" class="custom-block-bg-overlay-image img-fluid" alt="Web Development" onclick="showArticle('webArticle')">
+                              </div>
+                              <div id="immoArticle" class="article-popup">
+                                  <div class="article-content">
+                                      <button class="close-btn" onclick="closeArticle()">X</button>
+                                      <h3>Basique</h3>
+                                      <p>Accueil des locataires <br> Remise des clés <br> Etat des lieux <br> Restitution des clés</p>
+                                  </div>
+                              </div>
+
+                              <div id="webArticle" class="article-popup">
+                                  <div class="article-content">
+                                      <button class="close-btn" onclick="closeArticle()">X</button>
+                                      <h3>Complet</h3>
+                                      <p>Accueil des locataires <br> Remise des clés <br> Etat des lieux <br> Restitution des clés <br> Ménage</p>
+                                  </div>
+                              </div>
+                              <div id="overlay" class="overlay"></div>
+
+                                <div class="pb-3 mb-5"style="padding-top:40px;">
+                                    <p>Des options sont envisageables...</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+<section style="background:#F5E4C9;">                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="white" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg> <!-- first wave-->
+</section>
+                    <section class="bgd-section section-padding" id="section_3">
+
+                        <div class="container">
+                        <div class="row">
+
+                                <div class="col-12">
+                                    <h2 class="mb-5"style="text-transform: uppercase;font-weight: 500;letter-spacing: .15em;">Photographie Immobiliere</h2>
+                                </div>
+                                <div class="border-bottom pb-3 mb-5">
+                                    <p>Que ce soit pour completer votre demqnde de conciergerie, pour une vente ou simplement un shooting <br> Nous réalisons le shooting de votre bien.
+                                      </p>
+
+
+                                      <div class="photo-gallery">
+                                          <div class="photo-container">
+                                              <img src="/assets/images/magency/immo1.jpg" alt="Photo 1">
+                                          </div>
+                                          <div class="photo-container">
+                                              <img src="/assets/images/magency/immo2.jpg" alt="Photo 2">
+                                          </div>
+                                          <div class="photo-container">
+                                              <img src="/assets/images/magency/immo3.jpg" alt="Photo 3">
+                                          </div>
+                                          <div class="photo-container">
+                                              <img src="/assets/images/magency/immo4.jpg" alt="Photo 4">
+                                          </div>
+                                      </div>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <h2 class="mb-5"style="text-transform: uppercase;font-weight: 500;letter-spacing: .15em;">Mise en valeur</h2>
+                                </div>
+                                <div class=" pb-3 mb-5">
+                                    <p>Vous vendez des produits et souhaitez less mettre en valeur ? Profitez de notre expertise pour votre besoin.
+                                      </p>
+
+
+                                                                            <div class="photo-gallery">
+                                                                                <div class="photo-container">
+                                                                                    <img src="/assets/images/magency/val5.jpg" alt="Photo 1">
+                                                                                </div>
+                                                                                <div class="photo-container">
+                                                                                    <img src="/assets/images/magency/val2.jpg" alt="Photo 2">
+                                                                                </div>
+                                                                                <div class="photo-container">
+                                                                                    <img src="/assets/images/magency/val3.jpg" alt="Photo 3">
+                                                                                </div>
+                                                                                <div class="photo-container">
+                                                                                    <img src="/assets/images/magency/val4.jpg" alt="Photo 4">
+                                                                                </div>
+                                                                            </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </section>
+<section style="background:#F5E4C9;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260"><path fill="white" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+</section>
+
+<section class="hero2-section section-padding" id="section_4">
+
+    <div class="container">
+    <div class="row">
+
+            <div class="col-12">
+                <h2 class="mb-5"style="text-transform: uppercase;font-weight: 500;letter-spacing: .15em;">Developpement web</h2>
+            </div>
+            <div class="col-3 custom-col">
+              <div class="photo-container">
+                  <img src="/assets/images/magency/web.jpg" alt="">
+              </div>
+            </div>
+            <div class="border-bottom col-9  devweb custom-col">
+                <p>Developement de votre site web, hébergement, domaine et mmaintenance à volonté.
+                  </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</section>
+
+<section class="hero3-section section-padding" id="section_5">
+
+    <div class="container">
+    <div class="row border-bottom">
+
+      <div class="col-12">
+          <h2 class="mb-5"style="text-transform: uppercase;font-weight: 500;letter-spacing: .15em;">Soutien Scolaire</h2>
+      </div>
+      <div class="col-3 custom-col">
+        <div class="photo-container">
+            <img src="/assets/images/magency/work.jpg" alt="">
+        </div>
+      </div>
+      <div class="border-bottom col-9  devweb custom-col">
+          <p>Accompagnement du primaire à la terminale dans les matières scientifiques et anglais.
+            </p>
+      </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+                <section class="contact-section" id="section_6">
+                    <div class="section-padding section-bg">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-8 col-12 mx-auto">
+                                    <h2 class="text-center">Keep in touch !</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-padding2">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-6 col-12">
+                                    <h5 class="mb-3"><strong>Contact</strong> </h5>
+
+                                    <p class="text-white d-flex mb-1">
+                                        <a href="tel: +33788227749" class="site-footer-link">
+                                            (+33)
+                                            7.88.22.77.49
+                                        </a>
+                                    </p>
+
+                                    <p class="text-white d-flex">
+                                        <a href="mailto:margauxhaering@orange.fr" class="site-footer-link">
+                                            margauxhaering@orange.fr
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-5 col-12 contact-block-wrap mt-5 mt-lg-0 pt-4 pt-lg-0 mx-auto">
+                                    <div class="contact-block">
+                                        <h6 class="mb-0">
+                                            <i class="custom-icon bi-shop me-3"></i>
+
+                                            <strong>Open to work!</strong>
+
+                                            <span class="ms-auto">Monaco & Marseille</span>
+                                        </h6>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="site-footer">
+
+
+                    <div class="site-footer-bottom">
+                        <div class="container">
+                            <div class="row align-items-center">
+
+                                <div class="col-lg-8 col-12 mt-4">
+                                    <p class="copyright-text mb-0">Copyright © 2024 Margaux Haering
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-2 col-md-3 col-3 mt-lg-4 ms-auto">
+                                    <a href="#section_1" class="back-top-icon smoothscroll" title="Back Top">
+                                        <i class="bi-arrow-up-circle"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/d3.v3.min.js"></script>
+        <script src="/assets/js/d3.v4.min.js"></script>
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/main.js"> </script>
+    </body>
+</html>
