@@ -41,6 +41,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
 }
 
 header {
@@ -102,6 +103,20 @@ h1.main {
     letter-spacing: .15em;
     animation: typing 3s steps(40, end), blink-caret .5s step-end infinite;
         }
+
+        h1.main2 {
+            color:#5B503D;
+            font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            overflow: hidden;
+            border-right: .15em solid transparent;
+            white-space: nowrap;
+            padding-top: 60px;
+            margin: 0;
+            letter-spacing: .15em;
+            animation: typing 3s steps(40, end), blink-caret .5s step-end infinite;
+                }
 h1,
 h2,
 h3,
