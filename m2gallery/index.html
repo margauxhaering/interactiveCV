@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> M2 Gallery</title>
+
+    <!-- CSS -->
+    <link href="/m2gallery/assets/css/main.css" rel="stylesheet">
+    <!-- javascript -->
+    <script src="/m2gallery/assets/js/jquery.min.js"></script>
+    <script src="/m2gallery/assets/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="page-top" class="index" style="background-image:url('/m2gallery/assets/img/tulip.jpg');backdrop-filter: blur(10px);">
+<div id="includenavbar"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading col-md-12">
+                  <h1 class="main">Photography enthusiasts... </h1> </div>
+                  <div class="intro-lead-in col-md-12">Currently in our 20's, we are sharing our passion with you... </div>
+                </div>
+                <div class="gallery">
+                    <img src="/m2gallery/assets/img/lion.png" alt="Image 1" class="gallery-item" onclick="openModal(this)">
+                    <img src="/m2gallery/assets/img/guepard.png" alt="Image 2" class="gallery-item" onclick="openModal(this)">
+                    <img src="/m2gallery/assets/img/elephant.png" alt="Image 3" class="gallery-item" onclick="openModal(this)">
+                    <img src="/m2gallery/assets/img/grece1.png" alt="Image 4" class="gallery-item" onclick="openModal(this)">
+                    <img src="/m2gallery/assets/img/grece2.png" alt="Image 5" class="gallery-item" onclick="openModal(this)">
+                    <img src="/m2gallery/assets/img/marseille.png" alt="Image 6" class="gallery-item" onclick="openModal(this)">
+                    <img src="/m2gallery/assets/img/cretes.png" alt="Image 7" class="gallery-item" onclick="openModal(this)">
+                    <img src="/m2gallery/assets/img/croco.png" alt="Image 8" class="gallery-item" onclick="openModal(this)">
+                    <img src="/m2gallery/assets/img/avion.png" alt="Image 9" class="gallery-item" onclick="openModal(this)">
+                </div>
+
+                <!-- Modal for image zooming -->
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                    <button class="close-btn" onclick="closeModal()">Close</button>
+                </div>
+
+                <div id = 'me' class="col-md-12" >
+                    <div class="col-md-12" style="padding:10px 0px; text-align:left">
+                      <h5>
+                        For any inquiry, feel free to contact us... Prints are available in several format.
+                      </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+<script>
+$("#includenavbar").load("/m2gallery/navbar.html");
+document.addEventListener('DOMContentLoaded', function () {
+    const titleElement = document.getElementById('maintitle');
+    console.log(titleElement);
+    function showTitle() {
+        for (let i = 0; i < titleElement.length; i++) {
+            setTimeout(titleElement, i * 100, i);
+        }
+    }
+
+    // Call the function to start the animation
+    showTitle();
+});
+
+
+function openModal(image) {
+    var modal = document.getElementById("myModal");
+    var modalImage = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImage.src = image.src;
+}
+
+// Function to close the modal
+function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+
+</script>
+</html>
