@@ -133,6 +133,15 @@ strong {
 }
 
 
+
+.conciergerie {
+  background: url('/assets/images/magency/monaco.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter:blur(10px);
+}
+
+
 /*---------------------------------------
   galeries
 -----------------------------------------*/
