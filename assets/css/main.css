@@ -172,40 +172,6 @@ strong {
 .devweb{
 margin-top: 50px;
 }
-/* Media query for window width less than 400px */
-@media (max-width: 400px) {
-  .photo-gallery {
-         grid-template-columns: repeat(2, 1fr);
-         grid-template-rows: repeat(2, 150px);
-     }
-
-     .photo-container {
-         width: 100%;
-         height: 150px;
-     }
-
-
-     .devweb{
-     margin-top: 50px;
-     }
-     .custom-col:nth-child(1) {
-         /* First div will take col-4 on small screens */
-         flex: 0 0 33.333333%;
-         max-width: 33.333333%; /* Equivalent to col-4 */
-     }
-
-     .custom-col:nth-child(2) {
-         /* Second div will take col-8 on small screens */
-         flex: 0 0 66.666667%;
-         max-width: 66.666667%; /* Equivalent to col-8 */
-     }
-}
-
-
-
-
-
-
 
 
 
@@ -344,7 +310,7 @@ margin-top: 50px;
 }
 
 .logo-image {
-  width: 154px;
+  width: 180px;
   height: auto;
   margin-bottom: 20px;
 }
@@ -450,7 +416,7 @@ Home
   overflow: hidden;
   padding: 50px;
   padding-bottom: 0;
-  min-height: 665px;
+  min-height: 500px;
   border-bottom: 15px solid var(--primary-color);
 }
 
@@ -988,5 +954,36 @@ color: var(--secondary-color);
   #desc, #desc2, #desc3{
     font-size: 8px;
   }
+
+  .magencyhero {
+    height: 50px;
+  }
+  .section-padding2 {
+    padding: 0px;
+  }
+
+  .photo-gallery {
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(2, 150px);
+     }
+
+     .photo-container {
+         width: 100%;
+         height: 150px;
+     }
+
+
+     .devweb{
+     margin-top: 50px;
+     }
+     .custom-col {
+         /* First div will take col-4 on small screens */
+         flex: 0 0 100%;
+         max-width: 100%; /* Equivalent to col-4 */
+     }
+
+
+
+
 
 }
