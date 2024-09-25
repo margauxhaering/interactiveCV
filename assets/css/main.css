@@ -140,6 +140,9 @@ strong {
   background-position: center;
   backdrop-filter:blur(10px);
 }
+.conciergerie h2, p{
+  padding : 0px 50px;
+}
 
 
 /*---------------------------------------
@@ -807,6 +810,31 @@ Home
   margin-top: 80px;
   margin-left: 150px;
 }
+
+
+.section-padding3 {
+  padding: 0px 0px;
+}
+
+
+
+.detailscv{
+padding-bottom: 40px;
+}
+
+.detailscv, .detailsphoto {
+font-size: 15px;
+column-count: 2;
+column-gap: 30px;
+text-align:justify;
+}
+.detailscv, .detailsphoto b{
+font-size: 20px;
+color: var(--secondary-color);
+}
+
+
+
 /*---------------------------------------
   RESPONSIVE STYLES
 -----------------------------------------*/
@@ -879,6 +907,8 @@ Home
   margin-bottom: 20px
 }
 
+
+
 @media screen and (max-width: 767px) {
   .custom-btn {
     font-size: 14px;
@@ -890,16 +920,7 @@ Home
 }
 
 
-.detailscv, .detailsphoto {
-font-size: 15px;
-column-count: 2;
-column-gap: 30px;
-text-align:justify;
-}
-.detailscv, .detailsphoto b{
-font-size: 20px;
-color: var(--secondary-color);
-}
+
 
 @media screen and (max-width: 480px) {
 
@@ -958,8 +979,10 @@ color: var(--secondary-color);
   .magencyhero {
     height: 50px;
   }
+
+
   .section-padding2 {
-    padding: 0px;
+    padding: 50px 30px;
   }
 
   .photo-gallery {
@@ -983,7 +1006,11 @@ color: var(--secondary-color);
      }
 
 
+     .conciergerie h2, p{
+       padding : 0px 10px;
+     }
 
-
-
+     .detailscv{
+     padding-bottom: 2px;
+     }
 }
