@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+<body>
+  <h2>Formulaire de Contact</h2>
+<form id="contact-form">
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="event_date">Date de l'événement :</label>
+    <input type="date" id="event_date" name="event_date" required><br><br>
+
+    <label>Type d'événement :</label><br>
+    <input type="radio" id="mariage" name="event_type" value="Mariage" required>
+    <label for="mariage">Mariage</label>
+
+    <input type="radio" id="anniversaire" name="event_type" value="Anniversaire">
+    <label for="anniversaire">Anniversaire</label>
+
+    <input type="radio" id="autre" name="event_type" value="Autre">
+    <label for="autre">Autre</label><br><br>
+
+    <label for="documents">Nombre de documents :</label>
+    <input type="number" id="documents" name="documents" min="1" required><br><br>
+
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <button type="submit">Envoyer</button>
+</form>
+
+<p id="status"></p>
+
+    <script>
+        (function() {
+            emailjs.init("pT0vqK2rBF-dpwvDU"); // Remplace par ton User ID
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm("service_jmkj249", "template_megdp4b", this)
+                .then(function(response) {
+                    document.getElementById("status").innerHTML = "Message envoyé avec succès !";
+                }, function(error) {
+                    document.getElementById("status").innerHTML = "Erreur lors de l'envoi.";
+                });
+
+            this.reset();
+        });
+    </script>
+</body>
+</html>

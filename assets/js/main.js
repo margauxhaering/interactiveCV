@@ -163,10 +163,8 @@ var infoDiv = d3.select(`#${descId}`);
 const exp = [
     { label: 'Master 1 Internship', value: 2, time:'2019 - 2 months', color:1 },
     { label: 'Master 2 Internship', value: 5, time:'2020 - 6 months', color: 2 },
-    { label: 'Data analysis & dev', value: 52, time:'2020-2025', color: 3 },
-    { label: 'Teaching', value: 41, time:'2020-2024', color:4 },
-
-
+    { label: 'Research', value: 52, time:'2020-2025', color: 3 },
+    { label: 'Teaching', value: 41, time:'2020-2024', color:4 }
 ];
 
 const edu = [
@@ -190,7 +188,8 @@ const events = [
   { ev: 'Licence', start: '09/2015', end: '06/2018' },
   { ev: 'Master', start: '09/2018', end: '06/2020' },
   { ev: 'Engineer', start: '08/2020', end: '09/2021' },
-  { ev: 'PhD', start: '09/2021', end: '09/2024' }
+  { ev: 'PhD', start: '09/2021', end: '09/2024' },
+  { ev: 'Postdoc', start: '10/2024', end: '12/2025' }
 ];
 
 let width;
