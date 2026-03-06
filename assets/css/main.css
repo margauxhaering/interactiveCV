@@ -317,6 +317,11 @@ margin-top: 50px;
   height: auto;
   margin-bottom: 20px;
 }
+.px5 {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
 
 #sidebarMenu .nav-link {
   color: var(--dark-color);
