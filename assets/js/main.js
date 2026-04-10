@@ -161,9 +161,9 @@ var infoDiv = d3.select(`#${descId}`);
 }
 
 const exp = [
-    { label: 'Internships', value: 7, time:'2019 - 2020', color:1 },
-    { label: 'Research', value: 56, time:'2020-2026', color: 3 },
-    { label: 'Teaching', value: 37, time:'2020-2024', color:4 }
+  { label: 'Internships', value: 7, time:'2019 - 2020', color:1 },
+      { label: 'Research', value: 56, time:'2020-2026', color: 3 },
+      { label: 'Teaching', value: 37, time:'2020-2024', color:4 }
 ];
 
 const edu = [
@@ -173,10 +173,12 @@ const edu = [
 ];
 
 const skills = [
-    { label: 'R', value: 25, time:'', color:7 },
-    { label: 'Python', value: 25, time:'', color:8 },
-    { label: 'Web', value: 25, time: 'HTML, CSS, JS, PHP, mySQL', color:9 },
-    { label: 'Bash', value: 25, time: '', color:10 },
+    { label: 'R', value: 20, time:'', color:7 },
+    { label: 'Python', value: 20, time:'', color:8 },
+    { label: 'Web', value: 20, time: 'HTML, CSS, JS, PHP, mySQL', color:9 },
+    { label: 'Bash', value: 20, time: '', color:10 },
+    { label: 'C++', value: 10, time: '', color:11 },
+    { label: 'Java', value: 10, time: '', color:12 },
 ];
 
 createPieChart(exp, 'pie1', 'desc');
@@ -187,8 +189,8 @@ const events = [
   { ev: 'Licence', start: '09/2015', end: '06/2018' },
   { ev: 'Master', start: '09/2018', end: '06/2020' },
   { ev: 'Engineer', start: '08/2020', end: '09/2021' },
-  { ev: 'PhD', start: '09/2021', end: '09/2024' },
-  { ev: 'Postdoc', start: '10/2024', end: '08/2026' }
+  { ev: 'PhD', start: '09/2021', end: '10/2024' },
+  { ev: 'Postdoc', start: '01/2025', end: '08/2026' }
 ];
 
 let width;
