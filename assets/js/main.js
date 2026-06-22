@@ -162,14 +162,14 @@ var infoDiv = d3.select(`#${descId}`);
 
 const exp = [
   { label: 'Internships', value: 7, time:'2019 - 2020', color:1 },
-      { label: 'Research', value: 56, time:'2020-2026', color: 3 },
+      { label: 'Data Engineering', value: 56, time:'2020-2026', color: 3 },
       { label: 'Teaching', value: 37, time:'2020-2024', color:4 }
 ];
 
 const edu = [
     { label: 'Biochesmistry Licence', value: 37.5, time:'2015 - 2018', color:4 },
     { label: 'Bioinformatics Master', value: 25, time:'2018 - 2020', color:5 },
-    { label: 'Bioinformatics PhD', value: 37.5, time: '2021 - 2024', color:6 },
+    { label: 'Computational Biology PhD', value: 37.5, time: '2021 - 2024', color:6 },
 ];
 
 const skills = [
